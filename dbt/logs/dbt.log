@@ -1,0 +1,81 @@
+[0m17:11:10.278120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021102501820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021101D9F710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021101D008F0>]}
+
+
+============================== 17:11:10.296322 | ad9b87a5-b405-40ac-9a60-f8aa923dad2d ==============================
+[0m17:11:10.296322 [info ] [MainThread]: Running with dbt=1.12.4
+[0m17:11:10.298102 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lvlr_\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init music_trends', 'log_path': 'logs'}
+[0m17:11:10.318220 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\lvlr_\.dbt
+[0m17:11:10.320496 [debug] [MainThread]: Starter project path: C:\Users\lvlr_\Desktop\music-trend-agent\venv\Lib\site-packages\dbt\include\starter_project
+[0m17:11:10.341090 [info ] [MainThread]: Setting up your profile.
+[0m17:29:35.523537 [info ] [MainThread]: Profile music_trends written to C:\Users\lvlr_\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m17:29:35.525411 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m17:29:35.526202 [info ] [MainThread]: dbt version: 1.12.4
+[0m17:29:35.526202 [info ] [MainThread]: python version: 3.12.10
+[0m17:29:35.527070 [info ] [MainThread]: python path: C:\Users\lvlr_\Desktop\music-trend-agent\venv\Scripts\python.exe
+[0m17:29:35.527070 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m17:29:35.584434 [info ] [MainThread]: Using profiles dir at C:\Users\lvlr_\.dbt
+[0m17:29:35.585208 [info ] [MainThread]: Using profiles.yml file at C:\Users\lvlr_\.dbt\profiles.yml
+[0m17:29:35.585208 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\lvlr_\Desktop\music-trend-agent\dbt\music_trends\dbt_project.yml
+[0m17:29:35.585208 [info ] [MainThread]: adapter type: bigquery
+[0m17:29:35.585208 [info ] [MainThread]: adapter version: 1.12.0
+[0m17:29:35.668201 [info ] [MainThread]: Configuration:
+[0m17:29:35.668201 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:29:35.668975 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:29:35.668975 [info ] [MainThread]: Required dependencies:
+[0m17:29:35.669760 [debug] [MainThread]: Executing "git --help"
+[0m17:29:35.719058 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:29:35.719058 [debug] [MainThread]: STDERR: "b''"
+[0m17:29:35.720308 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:29:35.720308 [info ] [MainThread]: Connection:
+[0m17:29:35.720308 [info ] [MainThread]:   method: service-account
+[0m17:29:35.721312 [info ] [MainThread]:   database: music-trend-agent-508220
+[0m17:29:35.721312 [info ] [MainThread]:   execution_project: music-trend-agent-508220
+[0m17:29:35.722122 [info ] [MainThread]:   schema: music_trends
+[0m17:29:35.722122 [info ] [MainThread]:   location: US
+[0m17:29:35.722122 [info ] [MainThread]:   priority: interactive
+[0m17:29:35.723013 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m17:29:35.723013 [info ] [MainThread]:   reservation: None
+[0m17:29:35.723013 [info ] [MainThread]:   impersonate_service_account: None
+[0m17:29:35.723783 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m17:29:35.723783 [info ] [MainThread]:   job_retries: 1
+[0m17:29:35.723783 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m17:29:35.723783 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m17:29:35.724549 [info ] [MainThread]:   job_link_info_level_log: False
+[0m17:29:35.724549 [info ] [MainThread]:   timeout_seconds: 300
+[0m17:29:35.725317 [info ] [MainThread]:   client_id: None
+[0m17:29:35.725317 [info ] [MainThread]:   token_uri: None
+[0m17:29:35.726111 [info ] [MainThread]:   compute_region: None
+[0m17:29:35.726111 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m17:29:35.726111 [info ] [MainThread]:   gcs_bucket: None
+[0m17:29:35.726869 [info ] [MainThread]:   dataproc_batch: None
+[0m17:29:35.726869 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m17:29:36.241322 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m17:29:36.241322 [debug] [MainThread]: On debug: select 1 as id
+[0m17:29:36.241322 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:29:38.202664 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=music-trend-agent-508220&j=bq:US:0d298593-21b9-4de9-9c89-48263f1c1fba&page=queryresults
+[0m17:29:38.391057 [debug] [MainThread]: SQL status: OK in 0.188 seconds
+[0m17:29:40.044425 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:29:40.045179 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:29:40.045944 [info ] [MainThread]: Your new dbt project "music_trends" was created!
+Initialized new project in C:\Users\lvlr_\Desktop\music-trend-agent\dbt\music_trends\music_trends
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:29:40.047456 [debug] [MainThread]: Command `dbt init` succeeded at 17:29:40.046700 after 1109.88 seconds
+[0m17:29:40.047456 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:29:40.047456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002110245FFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002111D46F740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002111ECD3AD0>]}
+[0m17:29:40.048218 [debug] [MainThread]: Flushing usage events
+[0m17:29:40.405516 [debug] [MainThread]: An error was encountered while trying to flush usage events
