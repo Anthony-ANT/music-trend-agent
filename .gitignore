@@ -3,3 +3,6 @@ venv/
 *.json
 data/raw/
 data/staged/
+dbt/logs/
+__pycache__/
+*.pyc
